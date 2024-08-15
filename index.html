@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Static Components</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script>
+            window.addEventListener("load", function () {
+                // Activate the preloader when the page loads
+                preloader.active(true);
+
+                // Deactivate the preloader after 3 seconds
+                setTimeout(function () {
+                    preloader.active(false);
+                }, 3000);
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>HTMl, CSS & JS Static Components</h1>
+        </header>
+
+        <main>
+            <h2>1. Hover & Not Pseudo Classes</h2>
+            <div class="container">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Tim Geil</p>
+        </footer>
+
+        <script src="index.js"></script>
+    </body>
+</html>
